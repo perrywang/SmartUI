@@ -1,0 +1,267 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{130FB692-45C2-4B9D-9396-3516F02BCBE7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SUI.Base</RootNamespace>
+    <AssemblyName>SUI.Base</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Orcas|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Orcas\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;ORCAS</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Titan|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Titan\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;TITAN</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleAssemblies>C:\Program Files (x86)\Microsoft Visual Studio 9.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleAssemblies>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleAssemblies>C:\Program Files (x86)\Microsoft Visual Studio 9.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleAssemblies>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Orcas|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;ORCAS</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleAssemblies>C:\Program Files (x86)\Microsoft Visual Studio 9.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleAssemblies>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Titan|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;TITAN</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleAssemblies>C:\Program Files (x86)\Microsoft Visual Studio 9.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleAssemblies>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\WINDOWS\assembly\GAC\EnvDTE\8.0.0.0__b03f5f7f11d50a3a\EnvDTE.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EnvDTE80, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\WINDOWS\assembly\GAC\EnvDTE80\8.0.0.0__b03f5f7f11d50a3a\EnvDTE80.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ManagedSpyLib, Version=1.0.3190.24822, Culture=neutral, PublicKeyToken=205864fb3a528ec8, processorArchitecture=x86" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="SeleniumPlug-in, Version=0.0.0.0, Culture=neutral, PublicKeyToken=c7c7c475aedf48b4, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Flex\FlashPlayerWindow.cs" />
+    <Compile Include="Resource\ResourceHandlers.cs" />
+    <Compile Include="Resource\SUIResource.cs" />
+    <Compile Include="Resource\SUIResourceFileParser.cs" />
+    <Compile Include="Resource\SUIResourceManager.cs" />
+    <Compile Include="SdmObjects\FakeSdmObject.cs" />
+    <Compile Include="Resource\InitStrings.cs" />
+    <Compile Include="SeleniumProxy\SUISeleniumProxy.cs" />
+    <Compile Include="SUIAccessible\SUIAccessibilityRoleIDs.cs" />
+    <Compile Include="SUIApp.cs" />
+    <Compile Include="SUIBaseErrorMessages.cs" />
+    <Compile Include="SUICaseFailException.cs" />
+    <Compile Include="SUIExceptions\SUIFileOutPutException.cs" />
+    <Compile Include="SUIExceptions\SUIHtmlCompareException.cs" />
+    <Compile Include="SUIExceptions\SUIIENotFoundException.cs" />
+    <Compile Include="SUIExceptions\SUIGetImageException.cs" />
+    <Compile Include="SUIExceptions\SUIGetWindowException.cs" />
+    <Compile Include="SUIExceptions\SUILoadBitmapFailException.cs" />
+    <Compile Include="SUIExceptions\SUIMultiThreadException.cs" />
+    <Compile Include="SUIExceptions\SUINullWindowException.cs" />
+    <Compile Include="SUIExceptions\SUISaveBitmapFailException.cs" />
+    <Compile Include="UIControls.HtmlControls\SUIHtmlImage.cs" />
+    <Compile Include="UIControls.HtmlControls\SUIHtmlSpan.cs" />
+    <Compile Include="SUIIE.cs" />
+    <Compile Include="UIControls.HtmlControls\SUIHtmlAnchor.cs" />
+    <Compile Include="UIControls.HtmlControls\SUIHtmlControlBase.cs" />
+    <Compile Include="UIControls.HtmlControls\SUIHtmlDiv.cs" />
+    <Compile Include="UIControls.HtmlControls\SUIHtmlDocument.cs" />
+    <Compile Include="UIControls.HtmlControls\SUIHtmlInputButton.cs" />
+    <Compile Include="UIControls.HtmlControls\SUIHtmlInputText.cs" />
+    <Compile Include="UIControls.HtmlControls\SUIHtmlSelect.cs" />
+    <Compile Include="UIControls.WinControls.Dotnet\SUIDotNetCheckBox.cs" />
+    <Compile Include="UIControls.WinControls.Dotnet\SUIDotNetComboBox.cs" />
+    <Compile Include="UIControls.WinControls.Dotnet\SUIDotNetContextMenuStrip.cs" />
+    <Compile Include="UIControls.WinControls.Dotnet\SUIDotNetControl.cs" />
+    <Compile Include="UIControls.WinControls.Dotnet\SUIDotNetButton.cs" />
+    <Compile Include="UIControls.WinControls.Dotnet\SUIDotNetListBox.cs" />
+    <Compile Include="UIControls.WinControls.Dotnet\SUIDotNetListView.cs" />
+    <Compile Include="UIControls.WinControls.Dotnet\SUIDotNetMenuStrip.cs" />
+    <Compile Include="UIControls.WinControls.Dotnet\SUIDotNetMenuStripItem.cs" />
+    <Compile Include="UIControls.WinControls.Dotnet\SUIDotNetPanel.cs" />
+    <Compile Include="UIControls.WinControls.Dotnet\SUIDotNetRadioButton.cs" />
+    <Compile Include="UIControls.WinControls.Dotnet\SUIDotNetStatic.cs" />
+    <Compile Include="UIControls.WinControls.Dotnet\SUIDotNetTabControl.cs" />
+    <Compile Include="UIControls.WinControls.Dotnet\SUIDotNetTabPage.cs" />
+    <Compile Include="UIControls.WinControls.Dotnet\SUIDotNetTextBox.cs" />
+    <Compile Include="UIControls.WinControls.Dotnet\SUIDotNetForm.cs" />
+    <Compile Include="SUIAccessible\SUIAccessibility.cs" />
+    <Compile Include="UIControls.WinControls.Dotnet\SUIDotNetToolStrip.cs" />
+    <Compile Include="UIControls.WinControls.Dotnet\SUIDotNetToolStripItem.cs" />
+    <Compile Include="UIControls.WinControls.Dotnet\SUIDotNetTreeView.cs" />
+    <Compile Include="UIControls.WinControls.Win32\AtlTreeView.cs" />
+    <Compile Include="UIControls.WinControls.Win32\SUIButton.cs" />
+    <Compile Include="UIControls.WinControls.Win32\SUICheckBox.cs" />
+    <Compile Include="UIControls.WinControls.Win32\SUIComboBox.cs" />
+    <Compile Include="UIControls.WinControls.Win32\SUIListBox.cs" />
+    <Compile Include="UIControls.WinControls.Win32\SUIListView.cs" />
+    <Compile Include="UIControls.WinControls.Win32\SUIListViewHeader.cs" />
+    <Compile Include="UIControls.WinControls.Win32\SUIListViewItem.cs" />
+    <Compile Include="UIControls.WinControls.Win32\SUIListViewSubitem.cs" />
+    <Compile Include="UIControls.WinControls.Win32\SUIMenu.cs" />
+    <Compile Include="UIControls.WinControls.Win32\SUIMenuItem.cs" />
+    <Compile Include="UIControls.WinControls.Win32\SUIMsoCommandBar.cs" />
+    <Compile Include="UIControls.WinControls.Win32\SUIMsoCommandBarPopup.cs" />
+    <Compile Include="UIControls.WinControls.Win32\SUIPropertyPage.cs" />
+    <Compile Include="UIControls.WinControls.Win32\SUIPropertySheet.cs" />
+    <Compile Include="UIControls.WinControls.Win32\SUIRadioButton.cs" />
+    <Compile Include="UIControls.WinControls.Win32\SUIRichEdit.cs" />
+    <Compile Include="UIControls.WinControls.Win32\SUIScrollBar.cs" />
+    <Compile Include="UIControls.WinControls.Win32\SUITabControl.cs" />
+    <Compile Include="UIControls.WinControls.Win32\SUITextBox.cs" />
+    <Compile Include="UIControls.WinControls.Win32\SUIToolbar.cs" />
+    <Compile Include="UIControls.WinControls.Win32\SUIToolbarButton.cs" />
+    <Compile Include="UIControls.WinControls.Win32\SUITreeView.cs" />
+    <Compile Include="UIControls.WinControls.Win32\SUITreeViewNode.cs" />
+    <Compile Include="Utility\IniFile.cs" />
+    <Compile Include="Utility\IOutputPipeline.cs" />
+    <Compile Include="Utility\SUIBitmap.cs" />
+    <Compile Include="Utility\SUICOMInterops.cs" />
+    <Compile Include="Utility\SUIComparer.cs" />
+    <Compile Include="UIControls.WinControls.Win32\SUIDialog.cs" />
+    <Compile Include="SUIException.cs" />
+    <Compile Include="Utility\SUIImage.cs" />
+    <Compile Include="Utility\SUIServiceManager.cs" />
+    <Compile Include="Utility\SUIUtil.cs" />
+    <Compile Include="Win\SUIGlobalKeyboardHook.cs" />
+    <Compile Include="Win\SUIKeyboard.cs" />
+    <Compile Include="SUILogger.cs" />
+    <Compile Include="Win\SUIMessage.cs" />
+    <Compile Include="Win\SUIMouse.cs" />
+    <Compile Include="Win\SUIProcess.cs" />
+    <Compile Include="Utility\SUIScreenShoter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Win\SUISleeper.cs" />
+    <Compile Include="Win\SUIWinAPIs.cs" />
+    <Compile Include="SUIWindow.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="MSHTML">
+      <Guid>{3050F1C5-98B5-11CF-BB82-00AA00BDCE0B}</Guid>
+      <VersionMajor>4</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="SHDocVw">
+      <Guid>{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Shell32">
+      <Guid>{50A7E9B0-70EF-11D1-B75A-00A0C90564FE}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ThirdPartAssembly\ManagedSpyLib.dll" />
+    <Content Include="ThirdPartAssembly\SeleniumPlug-in.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
